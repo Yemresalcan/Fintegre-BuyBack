@@ -1,15 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fintegre-Buyback</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <h1>Kişisel bilgilerinizi doldurunuz</h1>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/globals.css" />
+    <link rel="stylesheet" href="/css/styleguide.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="iphone-selection">
+      <div class="titile">
+        <div class="text-wrapper">Kişisel bilgilerinizi doldurunuz</div>
+        <img
+          class="geri-alm-srecinizi"
+          src="https://c.animaapp.com/9aVxmxIB/img/geri-al-m-s-recinizi-h-zl--ve-sorunsuz-bir--ekilde-ilerletmek-i-.png"
+        />
+      </div>
+      <div class="icon-container">
+        <div class="icon">
+          <img class="arrows-arrow-ledft" src="https://c.animaapp.com/9aVxmxIB/img/arrows---arrow-ledft-1---24px.svg" />
+        </div>
+      </div>
+
+      <div class="overlap">
+        <div class="form">
+          <div class="inputs">
+            <div class="text-wrapper-2">TC Kimlik Numarası</div>
+            <div class="text-wrapper-3">12345678912</div>
+          </div>
+          <div class="inputs">
+            <div class="text-wrapper-2">Ad</div>
+            <div class="text-wrapper-3">Başak</div>
+          </div>
+          <div class="inputs">
+            <div class="text-wrapper-2">Soyad</div>
+            <div class="text-wrapper-3">Yılmaz</div>
+          </div>
+          <div class="inputs">
+            <div class="text-wrapper-2">Doğum Yılı</div>
+            <div class="text-wrapper-3">1990</div>
+          </div>
+        </div>
+        <div class="overlap-group">
+          <div class="form-2">
+            <div class="inputs">
+              <div class="text-wrapper-2">GSM Numarası</div>
+              <div class="text-wrapper-3">(532) 532 1881</div>
+            </div>
+            <div class="inputs">
+              <div class="text-wrapper-2">E-posta Adresi</div>
+              <div class="text-wrapper-3">basak.yilmaz@gmail.com</div>
+            </div>
+            <div class="inputs">
+              <div class="text-wrapper-2">IBAN Sahibi Ad Soyad</div>
+              <div class="text-wrapper-3">Başak Yılmaz</div>
+            </div>
+            <div class="inputs">
+              <div class="text-wrapper-2">Paranın Yatırılacağı IBAN Numarası</div>
+              <p class="text-wrapper-3">TR12 3456 7890 1234 5678</p>
+              <img
+                class="interface-interface"
+                src="https://c.animaapp.com/9aVxmxIB/img/interface-interface-28---24px-1.svg"
+              />
+            </div>
+          </div>
+          <div class="agreements">
+            <div class="frame">
+              <div class="agreement">
+                <img class="checkbox-selected" src="https://c.animaapp.com/9aVxmxIB/img/checkbox-selected-3.svg" />
+                <p class="cihaz-ayd-nlatma">
+                  <span class="span">Cihaz Aydınlatma Metnini</span>
+                  <span class="text-wrapper-4"> okudum ve onaylıyorum.</span>
+                </p>
+              </div>
+              <div class="agreement">
+                <img class="checkbox-selected" src="https://c.animaapp.com/9aVxmxIB/img/checkbox-selected-2.svg" />
+                <p class="ticari-bilgilendirme">
+                  <span class="span">Ticari bilgilendirme&nbsp;&nbsp;Sözleşmesini</span>
+                  <span class="text-wrapper-4"> okudum ve onaylıyorum.</span>
+                </p>
+              </div>
+            </div>
+            <div class="agreement-2">
+              <img class="checkbox-selected" src="https://c.animaapp.com/9aVxmxIB/img/checkbox-selected-3.svg" />
+              <p class="geri-al-m-s-zle">
+                <span class="span">Geri Alım Sözleşmesini</span>
+                <span class="text-wrapper-4"> okudum ve onaylıyorum.</span>
+              </p>
+            </div>
+          </div>
+          <img class="union" src="https://c.animaapp.com/9aVxmxIB/img/union.svg" />
+
+         
+          <p class="p">
+            Teklifi kabul etmeniz durumunda belirlenen ücretin hesabınıza yatırılması için IBAN numarınızı paylaşmanız
+            gerekmektedir.
+          </p>
+        </div>
+      </div>
+
+      
 
 
-    <script src="js/main.js"></script>
-</body>
+
+    
+
+      <div class="iphone-selection-button" id="iphone-selection-button " onclick="showLoader()">
+      <p class="text-wrapper">Geri Alım Talebini Tamamla</p>
+        <div class="loader" id="loader"></div>
+    </div>
+      <p class="de-i-toku-hakk-nda">
+        <span class="text-wrapper-5">Değiş-Tokuş hakkında </span> <span class="span">daha fazla bilgi edinin</span>
+      </p>
+    
+      <div class="overlap-2">
+        <div class="summary-tooltip">
+          <div class="text-wrapper-6">İşlem Özeti</div>
+          <div class="device-summary-info">
+            <div class="frame-2"><img class="i-phone" src="https://c.animaapp.com/9aVxmxIB/img/iphone@2x.png" /></div>
+            <div class="selected-device-info">
+              <div class="text-wrapper-7">Geri Alınacak Cihaz</div>
+              <p class="text-wrapper-8">Apple iPhone 11 <br />Mor - 128 GB</p>
+            </div>
+          </div>
+          <div class="device-summary-info-2">
+            <div class="frame-2">
+              <div class="overlap-group-2">
+                <img class="image" src="https://c.animaapp.com/9aVxmxIB/img/image-3@2x.png" />
+                <img class="img" src="https://c.animaapp.com/9aVxmxIB/img/image-1@2x.png" />
+              </div>
+            </div>
+            <div class="selected-device-info">
+              <div class="text-wrapper-7">Yeni Cihaz</div>
+              <p class="text-wrapper-8">Apple iPhone 13<br />Black - 256 GB</p>
+            </div>
+          </div>
+          <div class="buyback-offer">
+            <div class="text-wrapper-9">Geri Alım Teklifi</div>
+            <div class="amounts">
+              <div class="offer-price">
+                <div class="text-wrapper-10">Yeni Cihaz Değeri:</div>
+                <div class="text-wrapper-11">22.500 TL</div>
+              </div>
+              <div class="offer-price">
+                <div class="text-wrapper-10">Eski Cihaz Değeri:</div>
+                <div class="text-wrapper-12">-2.500 TL</div>
+              </div>
+              <div class="offer-price">
+                <div class="text-wrapper-10">Ek Kampanya Tutarı:</div>
+                <div class="text-wrapper-11">-2. 000 TL</div>
+              </div>
+            </div>
+            <div class="TOTAL">
+              <div class="text-wrapper-13">Toplam Teklif:</div>
+              <div class="text-wrapper-14">15.000 TL</div>
+            </div>
+          </div>
+        </div>
+        <img class="close" src="https://c.animaapp.com/9aVxmxIB/img/close.svg" />
+      </div>
+    </div>
+<script>
+
+</script>
+  </body>
 </html>
