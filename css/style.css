@@ -18,16 +18,9 @@
   }
   
   .iphone-selection .text-wrapper {
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: "SF Pro Display-Bold", Helvetica;
-    font-weight: 700;
     color: #1d1d1f;
-    font-size: 38px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+    align-self: stretch;
+    font: 700 38px SF Pro Display, sans-serif;
   }
   
   .iphone-selection .geri-alm-srecinizi {
@@ -80,17 +73,7 @@
     box-sizing: border-box;
     
   }
-  .iphone-selection .text-wrapper {
-    position: relative;
-    width: fit-content;
-    font-family: "SF Pro Display-Medium", Helvetica;
-    font-weight: 500;
-    color: #ffffff;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
+
   
   .iphone-selection .div {
     position: relative;
@@ -128,7 +111,6 @@
     height: 56px;
     background-color: #ffffff;
     border-radius: 12px;
-    overflow: hidden;
     border: 1px solid;
     border-color: #d2d2d7;
   }
@@ -596,3 +578,62 @@
     white-space: nowrap;
   }
 
+  .text-gerialim{
+    color: #ffff;
+    letter-spacing: 0.4px;
+    align-self: stretch;
+    margin-top: 8px;
+    font: 400 20px SF Pro Display, sans-serif;
+  }
+
+  .i-src {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    overflow: hidden;
+    align-self: center;
+    max-width: 100%;
+    margin: auto 0;
+    cursor: pointer;
+  }
+
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+    z-index: 2; /* Ön planda görünmesi için z-index değeri */
+}
+
+.iban-image {
+    width: 20px;
+    height: 20px;
+    margin-left: 270px;
+    margin-top: 14px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.tooltip-texts {
+  visibility: hidden;
+width: 290px;
+background-color: #333;
+color: #6E6E73;
+text-align: center;
+border-radius: 6px;
+padding: 10px;
+position: absolute;
+z-index: 1;
+top: 30px;
+left: 50%;
+margin-left: -150px;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-texts {
+  visibility: visible;
+opacity: 1;
+background-color: #E1E1E5;
+border-radius: 16px;
+z-index: 100;
+}

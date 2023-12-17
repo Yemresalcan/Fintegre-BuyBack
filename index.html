@@ -55,46 +55,42 @@
               <div class="text-wrapper-3">Başak Yılmaz</div>
             </div>
             <div class="inputs">
-              <div class="text-wrapper-2">Paranın Yatırılacağı IBAN Numarası</div>
-              <p class="text-wrapper-3">TR12 3456 7890 1234 5678</p>
-              <img
-                class="interface-interface"
-                src="https://c.animaapp.com/9aVxmxIB/img/interface-interface-28---24px-1.svg"
-              />
+              <div class="inputs tooltip-container">
+                <div class="text-wrapper-2">Paranın Yatırılacağı IBAN Numarası</div>
+                <p class="text-wrapper-3">TR12 3456 7890 1234 5678</p>
+                <img class="iban-image" src="/assets/image/Icon.png" alt="IBAN Icon" />
+                <div class="tooltip-texts">Teklifi kabul etmeniz durumunda belirlenen ücretin hesabınıza yatırılması için IBAN numaranızı paylaşmanız gerekmektedir.</div>
             </div>
+            </div>
+            
+            
           </div>
           <div class="agreements">
             <div class="frame">
               <div class="agreement">
-                <img class="checkbox-selected" src="https://c.animaapp.com/9aVxmxIB/img/checkbox-selected-3.svg" />
+                <input type="checkbox" required checked />
                 <p class="cihaz-ayd-nlatma">
                   <span class="span">Cihaz Aydınlatma Metnini</span>
                   <span class="text-wrapper-4"> okudum ve onaylıyorum.</span>
                 </p>
               </div>
               <div class="agreement">
-                <img class="checkbox-selected" src="https://c.animaapp.com/9aVxmxIB/img/checkbox-selected-2.svg" />
-                <p class="ticari-bilgilendirme">
-                  <span class="span">Ticari bilgilendirme&nbsp;&nbsp;Sözleşmesini</span>
+                <input type="checkbox" required checked />
+                <p class="cihaz-ayd-nlatma">
+                  <span class="span">Ticari bilgilendirme Sözleşmesini</span>
                   <span class="text-wrapper-4"> okudum ve onaylıyorum.</span>
                 </p>
               </div>
             </div>
             <div class="agreement-2">
-              <img class="checkbox-selected" src="https://c.animaapp.com/9aVxmxIB/img/checkbox-selected-3.svg" />
+              <input type="checkbox" required checked />
               <p class="geri-al-m-s-zle">
                 <span class="span">Geri Alım Sözleşmesini</span>
                 <span class="text-wrapper-4"> okudum ve onaylıyorum.</span>
               </p>
             </div>
           </div>
-          <img class="union" src="https://c.animaapp.com/9aVxmxIB/img/union.svg" />
-
-         
-          <p class="p">
-            Teklifi kabul etmeniz durumunda belirlenen ücretin hesabınıza yatırılması için IBAN numarınızı paylaşmanız
-            gerekmektedir.
-          </p>
+      
         </div>
       </div>
 
@@ -105,8 +101,11 @@
     
 
       <div class="iphone-selection-button" id="iphone-selection-button " onclick="showLoader()">
-      <p class="text-wrapper">Geri Alım Talebini Tamamla</p>
+      <p class="text-gerialim">Geri Alım Talebini Tamamla</p>
         <div class="loader" id="loader"></div>
+
+
+        
     </div>
       <p class="de-i-toku-hakk-nda">
         <span class="text-wrapper-5">Değiş-Tokuş hakkında </span> <span class="span">daha fazla bilgi edinin</span>
@@ -159,8 +158,20 @@
         <img class="close" src="https://c.animaapp.com/9aVxmxIB/img/close.svg" />
       </div>
     </div>
-<script>
+    <script>
+  
+    function showLoader() {
+                var loader = document.getElementById("loader");
+                loader.style.display = "block";
 
-</script>
+                // Burada yapmak istediğiniz diğer işlemleri ekleyebilirsiniz
+
+                // Simüle edilen bir bekleme süresi ekleyerek loader'ı gizleme
+                setTimeout(function () {
+                    loader.style.display = "none"; // Loader'ı gizle
+                }, 2000); // Örneğin, 2 saniye sonra loader'ı gizle
+            }
+
+    </script>
   </body>
 </html>

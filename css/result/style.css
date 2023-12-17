@@ -272,6 +272,7 @@
     position: relative;
     width: 24px;
     height: 24px;
+    cursor: pointer;
   }
   
   .iphone-selection .p {
@@ -284,6 +285,8 @@
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0;
+    display: none !important; /* Başlangıçta gizli olacak */
+    transition: display 0.5s ease-in-out; /* Görünürlükte yumuşak bir geçiş ekleyin */
   }
   
   .iphone-selection .de-i-toku-hakk-nda {
@@ -528,3 +531,8 @@
     left: 290px;
   }
   
+
+  .interface-interface:hover + .overlap-2 .summary-tooltip .p {
+    display: block; /* Resmin üzerine gelindiğinde paragrafı görünür yapın */
+  }
+
