@@ -9,3 +9,13 @@ function showLoader() {
         loader.style.display = "none"; // Loader'ı gizle
     }, 2000); // Örneğin, 2 saniye sonra loader'ı gizle
 }
+
+function continueProcess() {
+// Devam Et butonuna tıklanınca yapılacak işlemler
+alert('Devam Et butonuna tıklandı');
+closePopup();
+}
+
+function closePopup() {
+document.getElementById('popup').style.display = 'none';
+}

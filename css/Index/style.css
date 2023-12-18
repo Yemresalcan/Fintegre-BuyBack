@@ -1,3 +1,7 @@
+
+
+
+
 .iphone-selection {
     position: relative;
     width: 1264px;
@@ -637,3 +641,22 @@ background-color: #E1E1E5;
 border-radius: 16px;
 z-index: 100;
 }
+
+.loader {
+  border: 6px solid #f3f3f3; /* Loader'ın dış halkası rengi */
+  border-top: 6px solid #3498db; /* Loader'ın iç halkası rengi */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite; /* Spinner'ın dönüş hızı ve süresi */
+  display: none; /* Başlangıçta loader'ı gizle */
+  margin: 20px auto; /* Ortalanmış pozisyon */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Media Queries */
+

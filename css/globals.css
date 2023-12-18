@@ -5,10 +5,15 @@
 }
 html,
 body {
-  margin: 0px;
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(255, 254, 254);
 }
-/* a blue color as a generic focus style */
+
 button:focus-visible {
   outline: 2px solid #4a90e2 !important;
   outline: -webkit-focus-ring-color auto 5px !important;
@@ -16,7 +21,7 @@ button:focus-visible {
 a {
   text-decoration: none;
 }
-
+  
 @font-face {
   font-family: "SF Pro Display-Bold";
   src: url("https://anima-uploads.s3.amazonaws.com/projects/634e6b4b723b28ff69092d1b/fonts/fontsfree-net-sfprodisplay-bold.ttf")

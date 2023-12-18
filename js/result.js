@@ -49,3 +49,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Tıklanabilir öğeyi seçin
+    var icon = document.getElementById("icon");
+
+    // Öğeye tıklanma olayını dinleyin
+    icon.addEventListener("click", function () {
+        // Yönlendirilecek sayfanın URL'sini belirtin
+        var redirectTo = "index.html"; // İstediğiniz URL'yi buraya ekleyin
+
+        // Yeni sayfaya yönlendirme
+        window.location.href = redirectTo;
+    });
+});
