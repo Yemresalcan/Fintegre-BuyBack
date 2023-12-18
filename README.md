@@ -1,4 +1,4 @@
-
+# [Live](https://fintegrefrontendcase.netlify.app/)
 
 # Ana Sayfa
 ![Alt text](image.png)
